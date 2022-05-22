@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css\contato.css" media="">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Contate-nos</h1>
+    </header>
+
+    <form action=“mailto:contato@afonsomadeira.com" method="post">
+        <div class="campo">
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" id="nome" placeholder="Nome Completo" required/>
+        <label for="email"><strong>E-mail:</strong></label>
+        <input type="email" id="email" placeholder="Email" required/>
+        <label for="telefone"><strong>Telefone:</strong></label>
+        <input type="tel" id="telefone" placeholder="Telefone" required/>
+        <label for="genero"><strong>Gênero:</strong></label>
+         <div class="campo">
+             <label>
+             <input type="radio" name="homem" id="homem">Homem
+             </label>
+             <label>
+             <input type="radio" name="mulher" id="mulher">Mulher
+             </label>
+             <label>
+             <input type="radio" name="outro" id="outro">Outro
+             </label>
+        </div>
+        <label for="especifique">Especifique:
+            <input type="text" name="especifique" id="especifique" placeholder="Especifique">
+        </label>
+        <label for="msg"><strong>Deixe sua mensagem:</strong></label>
+        <textarea id="msg" placeholder="Mensagem" required></textarea>
+        <fieldset class="grupo">
+         <div class="campo">
+             <div id="check">
+             <label for="motivo de contato"><strong>Motivo:</strong></label>
+             <input type="checkbox" name="elogio" id="elogio">Elogio
+             <input type="checkbox" name="ajuda" id="ajuda">Ajuda 
+             <input type="checkbox" name="trabalho" id="trabalho">Trabalhe Aqui
+             </div>
+         </div>
+        </fieldset>
+
+        <button class="botao" type="submit" >Enviar</button>
+        </form>
+</body>
+</html>
